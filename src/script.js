@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'hello from seans docker' });
 });
 
+app.get('/allItems', (req, res) => {
+  res.json({items: ["apple","banana","orange"] });
+});
+
 app.listen(PORT, () => {
   console.log('listening on port' + PORT);
 });
